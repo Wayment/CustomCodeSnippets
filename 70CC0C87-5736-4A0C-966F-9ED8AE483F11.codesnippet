@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>manTitleButton</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>private lazy var &lt;#name#&gt;: UIButton = {
+    let btn = UIButton(type: .custom)
+    btn.setTitle(&lt;#title#&gt;, for: .normal)
+    btn.setTitleColor(.hex(&lt;#titleHex#&gt;), for: .normal)
+    btn.titleLabel?.font = .regular(&lt;#font#&gt;)
+    btn.rx.tap.subscribe(onNext: {[weak self] (_) in
+        self?.showSaveToast()
+    }).disposed(by: rx.disposeBag)
+    return btn
+}()</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>70CC0C87-5736-4A0C-966F-9ED8AE483F11</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Lazy Title Button</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

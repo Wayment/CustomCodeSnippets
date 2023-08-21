@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>manThemeButton</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>private lazy var &lt;#name#&gt;: ThemeButton = {
+    let btn = ThemeButton(type: .custom)
+    btn.setTitle(&lt;#title#&gt;, for: .normal)
+    btn.rx.tap.subscribe(onNext: {[weak self] (_) in
+        self?.&lt;#method#&gt;
+    }).disposed(by: rx.disposeBag)
+    return btn
+}()</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>FC11B1CB-75D4-4DA7-A95C-E415C26D8ECE</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Lazy Theme Button</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
