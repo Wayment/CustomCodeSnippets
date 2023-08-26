@@ -3,28 +3,38 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>manview</string>
+	<string>manCollectionViewCell</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>private lazy var &lt;#name#&gt;: UIView = {
-    let view = UIView()
-    view.backgroundColor = .hex(&lt;#value#&gt;)
-    return view
-}()</string>
+	<string>class &lt;#name#&gt;: UICollectionViewCell, Reusable {
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setupUI()
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+    }
+    
+    private func setupUI() {
+        
+    }
+}
+</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>851B8CCD-F8A7-459D-AD35-E8076919E882</string>
+	<string>41EDBCDD-3E14-4157-ACE5-FCE147B45F74</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Lazy UIView</string>
+	<string>Class UICollectionViewCell</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>
