@@ -17,6 +17,7 @@
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -&gt; UITableViewCell {
         let cell: &lt;#cellTYpe#&gt; = tableView.rd.dequeueReusableCell(for: indexPath)
+        cell.model = dataList[indexPath.row]
         return cell
     }
     

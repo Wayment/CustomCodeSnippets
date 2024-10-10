@@ -16,6 +16,7 @@
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -&gt; UICollectionViewCell {
         let cell: &lt;#cellType#&gt; = collectionView.rd.dequeueReusableCell(for: indexPath)
+        cell.model = dataList[indexPath.item]
         return cell
     }
     

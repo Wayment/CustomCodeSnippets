@@ -9,7 +9,10 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>private lazy var &lt;#name#&gt;: UICollectionView = {
+	<string>
+private var dataList: [String] = []
+
+private lazy var &lt;#name#&gt;: UICollectionView = {
     let flowLayout = UICollectionViewFlowLayout()
     flowLayout.scrollDirection = .horizontal
     flowLayout.itemSize = CGSize(width: 56, height: 56)

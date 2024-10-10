@@ -9,7 +9,10 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>private lazy var &lt;#name#&gt;: UITableView = {
+	<string>
+private var dataList: [String] = []
+
+private lazy var &lt;#name#&gt;: UITableView = {
     let tableView = UITableView(frame: .zero, style: .plain)
     tableView.dataSource = self
     tableView.delegate = self
