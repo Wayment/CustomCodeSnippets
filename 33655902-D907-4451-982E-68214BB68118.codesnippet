@@ -12,7 +12,7 @@
 	<string>
 private var dataList: [String] = []
 
-private lazy var &lt;#name#&gt;: UICollectionView = {
+private lazy var collectionView: UICollectionView = {
     let flowLayout = UICollectionViewFlowLayout()
     flowLayout.scrollDirection = .horizontal
     flowLayout.itemSize = CGSize(width: 56, height: 56)

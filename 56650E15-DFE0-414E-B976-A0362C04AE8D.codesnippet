@@ -11,7 +11,7 @@
 	<key>IDECodeSnippetContents</key>
 	<string>extension &lt;#CurrentClass#&gt;: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -&gt; Int {
-        0
+        return dataList.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -&gt; UICollectionViewCell {

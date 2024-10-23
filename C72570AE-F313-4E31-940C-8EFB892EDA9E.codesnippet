@@ -12,7 +12,7 @@
 	<string>
 private var dataList: [String] = []
 
-private lazy var &lt;#name#&gt;: UITableView = {
+private lazy var tableView: UITableView = {
     let tableView = UITableView(frame: .zero, style: .plain)
     tableView.dataSource = self
     tableView.delegate = self

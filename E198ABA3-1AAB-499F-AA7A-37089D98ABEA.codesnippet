@@ -12,7 +12,7 @@
 	<string>extension &lt;#CurrentClass#&gt;: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -&gt; Int {
-        return 0
+        return dataList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -&gt; UITableViewCell {
